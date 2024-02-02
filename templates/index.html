@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extracted Headlines</title>
+</head>
+<body>
+    <h1>The Verge Headlines</h1>
+    <div>
+        {% for headline, url in zipped_data %}
+            <a href="{{ url }}" target="_blank">{{ headline }}</a><br>
+        {% endfor %}
+    </div>
+</body>
+</html>
